@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div>
+    <div sx={{ fontFamily: 'body' }}>
       <h1>My Portfolio</h1>
     </div>
   );

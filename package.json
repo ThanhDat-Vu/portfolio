@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
-    "@mdx-js/react": "^2.1.2",
+    "@fontsource/josefin-sans": "^4.5.9",
+    "@mdx-js/react": "^1.6.22",
     "next": "12.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",

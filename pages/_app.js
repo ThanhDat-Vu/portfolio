@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@theme-ui/core";
+import { ThemeProvider } from "theme-ui";
 import { theme } from "../theme";
 
 function MyApp({ Component, pageProps }) {
