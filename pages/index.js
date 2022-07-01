@@ -1,7 +1,5 @@
+import { Layout } from '../components';
+
 export default function Home() {
-  return (
-    <div sx={{ fontFamily: 'body' }}>
-      <h1>My Portfolio</h1>
-    </div>
-  );
+  return <Layout>My Portfolio</Layout>;
 }
