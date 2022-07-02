@@ -14,7 +14,6 @@ export default function Layout({ children }) {
 
 const styles = {
   main: {
-    height: '80vh',
-    p: 8,
+    
   },
 };

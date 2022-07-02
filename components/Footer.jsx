@@ -1,29 +1,11 @@
-import { Box, Flex } from 'theme-ui';
-import {
-  IoLogoLinkedin,
-  IoLogoGithub,
-  IoLogoFacebook,
-  IoLogoCodepen,
-} from 'react-icons/io';
+import { Flex } from 'theme-ui';
+import SocialIcons from './SocialIcons';
 
 export default function Footer() {
   return (
     <Flex sx={styles.footer}>
       <span>@Designed and Built by me</span>
-      <Box sx={styles.socialIcons}>
-        <a href='#'>
-          <IoLogoLinkedin size='24px' color='white' />
-        </a>
-        <a href='#'>
-          <IoLogoGithub size='24px' color='white' />
-        </a>
-        <a href='#'>
-          <IoLogoFacebook size='24px' color='white' />
-        </a>
-        <a href='#'>
-          <IoLogoCodepen size='24px' color='white' />
-        </a>
-      </Box>
+      <SocialIcons color='#FFFFFF' />
     </Flex>
   );
 }
@@ -41,10 +23,5 @@ const styles = {
     span: {
       mb: [4, 0],
     }
-  },
-  socialIcons: {
-    a: {
-      ml: 4,
-    },
   },
 };

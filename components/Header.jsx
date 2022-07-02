@@ -28,6 +28,7 @@ const styles = {
     bg: 'primary',
     position: 'sticky',
     top: '0',
+    zIndex: '1',
     boxShadow: '0 2px',
   },
   logo: {
