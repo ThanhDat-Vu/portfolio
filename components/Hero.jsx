@@ -9,7 +9,7 @@ export default function Hero() {
       <Box sx={styles.heroText}>
         <Box>
           <Heading>Hi, I'm</Heading>
-          <Heading sx={styles.highlight}>Daniel Vu</Heading>
+          <Heading sx={styles.highlight}>Daniel Vũ</Heading>
           <Heading>A Passionate Web Developer</Heading>
         </Box>
 
@@ -44,7 +44,7 @@ const styles = {
   hero: {
     flexDirection: ['column-reverse', 'row'],
     justifyContent: 'start',
-    height: ['auto', '100vh'],
+    minHeight: ['max-content', '100vh'],
     boxShadow: '0 2px',
   },
   heroText: {
@@ -64,7 +64,7 @@ const styles = {
   },
   heroImage: {
     width: ['100%', '50%'],
-    height: ['40vh', '100%'],
+    height: ['40vh', 'auto'],
     position: 'relative',
     boxShadow: ['0 2px', '-2px 0'],
     img: {
