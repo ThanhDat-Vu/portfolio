@@ -38,7 +38,7 @@ export const theme = {
       fontFamily: 'primary',
       fontWeight: 'bold',
       color: 'secondary',
-      bg: 'primary',
+      bg: 'transparent',
       border: '3px solid',
       borderColor: 'accent',
       borderRadius: 0,

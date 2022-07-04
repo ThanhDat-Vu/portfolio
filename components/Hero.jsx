@@ -43,7 +43,6 @@ export default function Hero() {
 const styles = {
   hero: {
     flexDirection: ['column-reverse', 'row'],
-    justifyContent: 'start',
     minHeight: ['max-content', '100vh'],
     boxShadow: '0 2px',
   },

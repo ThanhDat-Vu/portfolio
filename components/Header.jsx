@@ -82,6 +82,6 @@ const styles = {
   },
   cta: {
     alignItems: 'center',
-    px: [2, 3],
+    px: [2, 4],
   },
 };
