@@ -14,11 +14,11 @@ export default function Work() {
         <Box sx={styles.imageM}>
           <Image
             src={ProjectM}
-            alt='Big project'
+            alt='Medium project'
             layout='fill'
             objectFit='cover'
           />
-          <Box sx={styles.info}>
+          <Flex sx={styles.info}>
             <Heading as='h4'>Title</Heading>
             <Box>
               <Text>
@@ -27,21 +27,21 @@ export default function Work() {
               </Text>
             </Box>
             <Box>
-              <Button variant='filled'>VIEW PROJECT</Button>
+              <Button variant='filled'>SOURCE CODE</Button>
               <Button variant='outlined'>DEMO</Button>
             </Box>
-          </Box>
+          </Flex>
         </Box>
 
         <Flex sx={styles.imageWrapper}>
           <Box sx={styles.imageS}>
             <Image
               src={ProjectS}
-              alt='Big project'
+              alt='Small project'
               layout='fill'
               objectFit='cover'
             />
-            <Box sx={styles.info}>
+            <Flex sx={styles.info}>
               <Heading as='h4'>Title</Heading>
               <Box>
                 <Text>
@@ -50,18 +50,18 @@ export default function Work() {
                 </Text>
               </Box>
               <Box>
-                <Button variant='filled'>VIEW PROJECT</Button>
+                <Button variant='filled'>SOURCE CODE</Button>
               </Box>
-            </Box>
+            </Flex>
           </Box>
           <Box sx={styles.imageXS}>
             <Image
               src={HelloWorld}
-              alt='Big project'
+              alt='Mini project'
               layout='fill'
               objectFit='cover'
             />
-            <Box sx={styles.info}>
+            <Flex sx={styles.info}>
               <Heading as='h4'>Title</Heading>
               <Box>
                 <Text>
@@ -69,9 +69,9 @@ export default function Work() {
                 </Text>
               </Box>
               <Box>
-                <Button variant='filled'>VIEW PROJECT</Button>
+                <Button variant='filled'>SOURCE CODE</Button>
               </Box>
-            </Box>
+            </Flex>
           </Box>
         </Flex>
       </Flex>
@@ -84,7 +84,7 @@ export default function Work() {
             layout='fill'
             objectFit='cover'
           />
-          <Box sx={styles.info}>
+          <Flex sx={styles.info}>
             <Heading as='h4'>Title</Heading>
             <Box>
               <Text>
@@ -93,10 +93,10 @@ export default function Work() {
               </Text>
             </Box>
             <Box>
-              <Button variant='filled'>VIEW PROJECT</Button>
+              <Button variant='filled'>SOURCE CODE</Button>
               <Button variant='outlined'>DEMO</Button>
             </Box>
-          </Box>
+          </Flex>
         </Box>
         
         <Box sx={styles.title}>
@@ -119,7 +119,7 @@ const styles = {
   },
   imageM: {
     width: '100%',
-    height: ['30vh', '60%'],
+    height: ['32vh', '60%'],
     position: 'relative',
     boxShadow: ['0 -2px', '0px 2px'],
     img: {
@@ -130,7 +130,7 @@ const styles = {
     },
   },
   imageWrapper: {
-    height: ['35vh', '40%'],
+    height: ['32vh', '40%'],
     boxShadow: ['0 -2px', 'none'],
   },
   imageS: {
@@ -163,7 +163,7 @@ const styles = {
   },
   imageL: {
     width: '100%',
-    height: ['40vh', '100%'],
+    height: ['36vh', '100%'],
     position: 'relative',
     boxShadow: ['0 -2px', '2px 0, -2px 0'],
     img: {
@@ -174,11 +174,13 @@ const styles = {
     },
   },
   info: {
+    flexDirection: 'column',
+    justifyContent: 'center',
     visibility: 'hidden',
     position: 'relative',
     width: '100%',
     height: '100%',
-    p: [8, 12],
+    px: [8, 12],
     bg: 'backdrop',
     color: 'primary',
     div: {

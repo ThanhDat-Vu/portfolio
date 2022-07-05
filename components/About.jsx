@@ -12,7 +12,7 @@ export default function About() {
         <Box sx={styles.image}>
           <Image
             src={Me}
-            alt='I am using a computer'
+            alt='Working at night.'
             layout='fill'
             objectFit='cover'
           />

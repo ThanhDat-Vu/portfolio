@@ -31,7 +31,7 @@ export default function Hero() {
       <Box sx={styles.heroImage}>
         <Image
           src={HeroImage}
-          alt='Hero Image'
+          alt='Workspace'
           layout='fill'
           objectFit='cover'
         />

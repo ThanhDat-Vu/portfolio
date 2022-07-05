@@ -134,7 +134,7 @@ const styles = {
   },
   image: {
     width: '100%',
-    height: ['30vh', '100%'],
+    height: ['28vh', '100%'],
     position: 'relative',
     img: {
       zIndex: -1,
