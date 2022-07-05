@@ -68,6 +68,8 @@ export const theme = {
 
   styles: {
     root: {
+      scrollBehavior: 'smooth',
+      scrollPaddingTop: [12, 8],
       fontFamily: 'primary',
       fontSize: [2, 3],
       lineHeight: '1.5',

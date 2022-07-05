@@ -4,7 +4,7 @@ import Me from '../assets/me.jpg';
 
 export default function About() {
   return (
-    <Flex sx={styles.about}>
+    <Flex sx={styles.about} id='about'>
       <Flex sx={styles.left}>
         <Box sx={styles.title}>
           <Heading as='h3'>ABOUT ME</Heading>

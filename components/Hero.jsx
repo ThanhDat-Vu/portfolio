@@ -5,7 +5,7 @@ import SocialIcons from './SocialIcons';
 
 export default function Hero() {
   return (
-    <Flex sx={styles.hero}>
+    <Flex sx={styles.hero} id='home'>
       <Box sx={styles.heroText}>
         <Box>
           <Heading>Hi, I'm</Heading>

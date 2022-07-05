@@ -7,16 +7,20 @@ export default function Header() {
   return (
     <Flex sx={styles.header}>
       <Box sx={styles.logo}>
-        <Image src={Logo} alt='Logo' width='32px' height='32px' />
+        <a href='/'>
+          <Image src={Logo} alt='Logo' width='32px' height='32px' />
+        </a>
       </Box>
       <Flex sx={styles.navbar}>
         <Box sx={styles.spacer} />
-        <Link href='#'>Home</Link>
-        <Link href='#'>About</Link>
-        <Link href='#'>Work</Link>
+        <Link href='#home'>Home</Link>
+        <Link href='#about'>About</Link>
+        <Link href='#work'>Work</Link>
       </Flex>
       <Flex sx={styles.cta}>
-        <Button variant='outlined'>CONTACT</Button>
+        <Link href='#contact'>
+          <Button variant='outlined'>CONTACT</Button>
+        </Link>
       </Flex>
     </Flex>
   );

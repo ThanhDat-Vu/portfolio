@@ -38,7 +38,7 @@ export default function Contact() {
   };
 
   return (
-    <Flex sx={styles.contact}>
+    <Flex sx={styles.contact} id='contact'>
       <Flex sx={styles.column}>
         <Box sx={styles.title}>
           <Heading as='h3'>CONTACT ME</Heading>
@@ -143,7 +143,7 @@ const styles = {
   text: {
     color: 'primary',
     position: 'absolute',
-    top: [8, 12],
+    top: [8, 16],
     left: [4, 8],
     p: 8,
     bg: 'backdrop',

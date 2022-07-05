@@ -7,7 +7,7 @@ import HelloWorld from '../assets/hello-world.jpg';
 
 export default function Work() {
   return (
-    <Flex sx={styles.container}>
+    <Flex sx={styles.container} id='work'>
 
       <Flex sx={styles.left}>
 
