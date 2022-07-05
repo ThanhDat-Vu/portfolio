@@ -4,12 +4,12 @@ import Me from '../assets/me.jpg';
 
 export default function About() {
   return (
-    <Flex sx={style.about}>
-      <Flex sx={style.left}>
-        <Box sx={style.title}>
+    <Flex sx={styles.about}>
+      <Flex sx={styles.left}>
+        <Box sx={styles.title}>
           <Heading as='h3'>ABOUT ME</Heading>
         </Box>
-        <Box sx={style.image}>
+        <Box sx={styles.image}>
           <Image
             src={Me}
             alt='I am using a computer'
@@ -18,7 +18,7 @@ export default function About() {
           />
         </Box>
       </Flex>
-      <Flex sx={style.right}>
+      <Flex sx={styles.right}>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -38,7 +38,7 @@ export default function About() {
   );
 }
 
-const style = {
+const styles = {
   about: {
     flexDirection: ['column', 'row'],
     minHeight: ['max-content', '100vh'],

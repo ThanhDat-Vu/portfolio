@@ -11,6 +11,7 @@ export const theme = {
     primary: '#FFFFFF',
     secondary: '#000A12',
     accent: '#D71D1D',
+    backdrop: 'rgba(0, 10, 18, 0.7)',
   },
 
   breakpoints: ['960px', '1024px', '1440', '1920'],
@@ -54,6 +55,7 @@ export const theme = {
 
   text: {
     default: {
+      display: 'block',
       fontFamily: 'primary',
       fontSize: [3, 4],
     },

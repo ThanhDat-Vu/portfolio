@@ -8,7 +8,9 @@ import HelloWorld from '../assets/hello-world.jpg';
 export default function Work() {
   return (
     <Flex sx={styles.container}>
+
       <Flex sx={styles.left}>
+
         <Box sx={styles.imageM}>
           <Image
             src={ProjectM}
@@ -30,6 +32,7 @@ export default function Work() {
             </Box>
           </Box>
         </Box>
+
         <Flex sx={styles.imageWrapper}>
           <Box sx={styles.imageS}>
             <Image
@@ -72,6 +75,7 @@ export default function Work() {
           </Box>
         </Flex>
       </Flex>
+
       <Flex sx={styles.right}>
         <Box sx={styles.imageL}>
           <Image
@@ -94,6 +98,7 @@ export default function Work() {
             </Box>
           </Box>
         </Box>
+        
         <Box sx={styles.title}>
           <Heading as='h3'>MY WORK</Heading>
         </Box>
@@ -174,7 +179,7 @@ const styles = {
     width: '100%',
     height: '100%',
     p: [8, 12],
-    bg: 'rgba(0, 10, 18, 0.7)',
+    bg: 'backdrop',
     color: 'primary',
     div: {
       mb: [2, 3],
