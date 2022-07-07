@@ -9,7 +9,7 @@ export default function Hero() {
     <Flex sx={styles.hero} id='home'>
       <Flex sx={styles.heroText}>
         <Box>
-          <Heading as='h1'>Hi, I'm</Heading>
+          <Heading as='h1'>Hi, I&apos;m</Heading>
           <Heading as='h1' sx={styles.highlight}>
             Daniel Vũ
           </Heading>

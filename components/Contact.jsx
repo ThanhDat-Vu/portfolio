@@ -69,7 +69,7 @@ export default function Contact() {
             </Flex>
           </Box>
           <Box sx={styles.text}>
-            <Heading as='h2'>I'd love to hear from you!</Heading>
+            <Heading as='h2'>I&apos;d love to hear from you!</Heading>
             <Text>
               Got a project you would like me to work on? Or how about just a
               friendly chat.

@@ -7,9 +7,9 @@ export default function Header() {
   return (
     <Flex sx={styles.header}>
       <Box sx={styles.logo}>
-        <a href='/'>
+        <Link href='/'>
           <Image src={Logo} alt='Logo' width='32px' height='32px' />
-        </a>
+        </Link>
       </Box>
       <Flex sx={styles.navbar}>
         <Box sx={styles.spacer} />
