@@ -8,9 +8,7 @@ import HelloWorld from '../assets/hello-world.jpg';
 export default function Work() {
   return (
     <Flex sx={styles.container} id='work'>
-
       <Flex sx={styles.left}>
-
         <Box sx={styles.imageM}>
           <Image
             src={ProjectM}
@@ -18,14 +16,14 @@ export default function Work() {
             layout='fill'
             objectFit='cover'
           />
+
           <Flex sx={styles.info}>
-            <Heading as='h4'>Title</Heading>
-            <Box>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </Text>
-            </Box>
+            <Heading as='h3'>Headphones.com Clone</Heading>
+            <Text>
+              A full-stack e-commerce website with a shopping cart, Stripe
+              checkout, and a Sanity admin manager. This website is powered by
+              Next.js.
+            </Text>
             <Box>
               <Button variant='filled'>SOURCE CODE</Button>
               <Button variant='outlined'>DEMO</Button>
@@ -41,19 +39,19 @@ export default function Work() {
               layout='fill'
               objectFit='cover'
             />
+
             <Flex sx={styles.info}>
-              <Heading as='h4'>Title</Heading>
-              <Box>
-                <Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </Text>
-              </Box>
+              <Heading as='h3'>Personal Website</Heading>
+              <Text>
+                My portfolio, which was created with love and powered by
+                Next.js.
+              </Text>
               <Box>
                 <Button variant='filled'>SOURCE CODE</Button>
               </Box>
             </Flex>
           </Box>
+
           <Box sx={styles.imageXS}>
             <Image
               src={HelloWorld}
@@ -61,13 +59,10 @@ export default function Work() {
               layout='fill'
               objectFit='cover'
             />
+
             <Flex sx={styles.info}>
-              <Heading as='h4'>Title</Heading>
-              <Box>
-                <Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </Text>
-              </Box>
+              <Heading as='h3'>Mini-projects</Heading>
+              <Text>These projects help me capture new concepts.</Text>
               <Box>
                 <Button variant='filled'>SOURCE CODE</Button>
               </Box>
@@ -84,23 +79,23 @@ export default function Work() {
             layout='fill'
             objectFit='cover'
           />
+
           <Flex sx={styles.info}>
-            <Heading as='h4'>Title</Heading>
-            <Box>
-              <Text>
-                DLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </Text>
-            </Box>
+            <Heading as='h3'>Cozi - Letter Exchanging with Strangers</Heading>
+            <Text>
+              A CRUD website built with MERN Stack The main purpose of this website is
+              to allow people to share their feelings, send them to the world,
+              and find someone who empathizes with those feelings.
+            </Text>
             <Box>
               <Button variant='filled'>SOURCE CODE</Button>
               <Button variant='outlined'>DEMO</Button>
             </Box>
           </Flex>
         </Box>
-        
+
         <Box sx={styles.title}>
-          <Heading as='h3'>MY WORK</Heading>
+          <Heading as='h1'>MY WORK</Heading>
         </Box>
       </Flex>
     </Flex>
@@ -113,10 +108,12 @@ const styles = {
     minHeight: ['max-content', '100vh'],
     boxShadow: '0 2px',
   },
+
   left: {
     flexDirection: ['column-reverse', 'column'],
     width: ['100%', '50%'],
   },
+
   imageM: {
     width: '100%',
     height: ['32vh', '60%'],
@@ -129,10 +126,12 @@ const styles = {
       visibility: 'visible',
     },
   },
+
   imageWrapper: {
     height: ['32vh', '40%'],
     boxShadow: ['0 -2px', 'none'],
   },
+
   imageS: {
     width: '60%',
     height: '100%',
@@ -145,6 +144,7 @@ const styles = {
       visibility: 'visible',
     },
   },
+
   imageXS: {
     width: '40%',
     height: '100%',
@@ -156,11 +156,13 @@ const styles = {
       visibility: 'visible',
     },
   },
+
   right: {
     flexDirection: ['column-reverse', 'row'],
     alignItems: 'center',
     width: ['100%', '50%'],
   },
+
   imageL: {
     width: '100%',
     height: ['36vh', '100%'],
@@ -173,6 +175,7 @@ const styles = {
       visibility: 'visible',
     },
   },
+
   info: {
     flexDirection: 'column',
     justifyContent: 'center',
@@ -183,22 +186,20 @@ const styles = {
     px: [8, 12],
     bg: 'backdrop',
     color: 'primary',
-    div: {
+    span: {
       mb: [2, 3],
-      button: {
-        color: 'primary',
-        mr: 4,
-      },
     },
-    h4: {
-      fontSize: 6,
+    button: {
+      color: 'primary',
+      mr: 4,
     },
   },
+
   title: {
     minWidth: ['auto', '8vw'],
     minHeight: ['max-content', 'auto'],
     position: 'relative',
-    h3: {
+    h1: {
       position: ['static', 'absolute'],
       top: '50%',
       right: '50%',

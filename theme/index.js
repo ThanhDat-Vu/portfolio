@@ -14,13 +14,14 @@ export const theme = {
     backdrop: 'rgba(0, 10, 18, 0.7)',
   },
 
-  breakpoints: ['840px', '1024px', '1440', '1920'],
+  breakpoints: ['768px', '1024px', '1440', '1920'],
 
   space: [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64],
 
   buttons: {
     filled: {
       fontFamily: 'primary',
+      fontSize: [2, 3],
       fontWeight: 'bold',
       color: 'primary',
       bg: 'accent',
@@ -37,6 +38,7 @@ export const theme = {
     },
     outlined: {
       fontFamily: 'primary',
+      fontSize: [2, 3],
       fontWeight: 'bold',
       color: 'secondary',
       bg: 'transparent',
@@ -58,10 +60,10 @@ export const theme = {
       display: 'block',
       fontFamily: 'primary',
       fontSize: [3, 4],
+      lineHeight: '1.5',
     },
     heading: {
       fontFamily: 'primary',
-      fontSize: [7, 8],
       lineHeight: ['1.2', '1.5'],
     },
   },
@@ -71,8 +73,7 @@ export const theme = {
       scrollBehavior: 'smooth',
       scrollPaddingTop: [12, 8],
       fontFamily: 'primary',
-      fontSize: [2, 3],
-      lineHeight: '1.5',
+      fontSize: [2, 4],
     },
   },
 };

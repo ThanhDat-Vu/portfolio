@@ -2,15 +2,18 @@ import { Flex, Box, Heading, Text, Button } from 'theme-ui';
 import Image from 'next/image';
 import HeroImage from '../assets/workspace-wallpaper.jpg';
 import SocialIcons from './SocialIcons';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
     <Flex sx={styles.hero} id='home'>
-      <Box sx={styles.heroText}>
+      <Flex sx={styles.heroText}>
         <Box>
-          <Heading>Hi, I'm</Heading>
-          <Heading sx={styles.highlight}>Daniel Vũ</Heading>
-          <Heading>A Passionate Web Developer</Heading>
+          <Heading as='h1'>Hi, I'm</Heading>
+          <Heading as='h1' sx={styles.highlight}>
+            Daniel Vũ
+          </Heading>
+          <Heading as='h1'>A Passionate Web Developer</Heading>
         </Box>
 
         <Box>
@@ -23,10 +26,14 @@ export default function Hero() {
         <SocialIcons color='#000A12' />
 
         <Box>
-          <Button variant='filled'>SEE MY WORK</Button>
-          <Button variant='outlined'> RESUME</Button>
+          <Link href='#work'>
+            <Button variant='filled'>SEE MY WORK</Button>
+          </Link>
+          <a href='#'>
+            <Button variant='outlined'> RESUME</Button>
+          </a>
         </Box>
-      </Box>
+      </Flex>
 
       <Box sx={styles.heroImage}>
         <Image
@@ -46,21 +53,25 @@ const styles = {
     minHeight: ['max-content', '100vh'],
     boxShadow: '0 2px',
   },
+
   heroText: {
+    flexDirection: 'column',
     justifyContent: 'center',
     width: ['100%', '50%'],
-    py: [16, '10%'],
-    px: [12, 16],
+    p: [12, 16],
     div: {
       mb: [2, 3],
       button: {
         mr: 4,
+        mb: [4, 0],
       },
     },
   },
+
   highlight: {
     color: 'accent',
   },
+  
   heroImage: {
     width: ['100%', '50%'],
     height: ['40vh', 'auto'],

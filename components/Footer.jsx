@@ -21,6 +21,7 @@ const styles = {
     py: 16,
 
     span: {
+      fontSize: [2, 3],
       mb: [4, 0],
     }
   },

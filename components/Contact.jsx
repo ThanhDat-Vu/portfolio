@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import {
   Flex,
@@ -17,9 +17,11 @@ import { IoCallSharp, IoMailSharp, IoLocationSharp } from 'react-icons/io5';
 export default function Contact() {
   const form = useRef();
 
+  const [showSuccessMsg, setShowSuccessMsg] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
-
+    form.current.reset();
     emailjs
       .sendForm(
         'contact_service',
@@ -27,21 +29,19 @@ export default function Contact() {
         form.current,
         'Nne7fNrQTzS5lpcbX'
       )
-      .then(
-        (result) => {
-          alert(result.text);
-        },
-        (error) => {
-          alert(error.text);
-        }
-      );
+      .then(() => {
+        setShowSuccessMsg(true);
+        setTimeout(() => {
+          setShowSuccessMsg(false);
+        }, 5000);
+      });
   };
 
   return (
     <Flex sx={styles.contact} id='contact'>
       <Flex sx={styles.column}>
         <Box sx={styles.title}>
-          <Heading as='h3'>CONTACT ME</Heading>
+          <Heading as='h1'>CONTACT ME</Heading>
         </Box>
 
         <Box sx={styles.contactInfo}>
@@ -81,17 +81,23 @@ export default function Contact() {
       <Flex sx={styles.column}>
         <Box as='form' ref={form} onSubmit={sendEmail} sx={styles.contactForm}>
           <Flex>
-            <Input name='name' id='name' placeholder='Name' />
+            <Input name='name' id='name' placeholder='Name' required />
             <Label htmlFor='name'>Your name</Label>
           </Flex>
 
           <Flex>
-            <Input name='email' id='email' placeholder='Email' />
+            <Input
+              name='email'
+              id='email'
+              type='email'
+              placeholder='Email'
+              required
+            />
             <Label htmlFor='email'>Your email</Label>
           </Flex>
 
           <Flex>
-            <Input name='subject' id='subject' placeholder='Subject' />
+            <Input name='subject' id='subject' placeholder='Subject' required />
             <Label htmlFor='subject'>Subject</Label>
           </Flex>
 
@@ -108,6 +114,8 @@ export default function Contact() {
           <Button type='submit' variant='filled'>
             SEND MESSAGE
           </Button>
+
+          {showSuccessMsg && <Text sx={styles.successMsg}>Message sent!</Text>}
         </Box>
       </Flex>
     </Flex>
@@ -120,18 +128,21 @@ const styles = {
     minHeight: ['max-content', '100vh'],
     boxShadow: '0 2px',
   },
+
   column: {
     flexDirection: ['column', 'row'],
     alignItems: 'center',
     width: ['100%', '50%'],
     boxShadow: ['none', '-2px 0'],
   },
+
   contactInfo: {
     width: '100%',
     height: '100%',
     boxShadow: ['0 -2px', '-2px 0'],
     position: 'relative',
   },
+
   image: {
     width: '100%',
     height: ['28vh', '100%'],
@@ -140,6 +151,7 @@ const styles = {
       zIndex: -1,
     },
   },
+
   text: {
     color: 'primary',
     position: 'absolute',
@@ -149,8 +161,9 @@ const styles = {
     bg: 'backdrop',
     h2: {
       fontSize: [5, 6],
-    }
+    },
   },
+
   info: {
     width: '100%',
     color: ['secondary', 'primary'],
@@ -164,32 +177,36 @@ const styles = {
     div: {
       alignItems: 'center',
       mb: 6,
-      'span': {
+      span: {
         ml: 4,
-      }
+      },
     },
   },
+
   title: {
     minWidth: ['auto', '8vw'],
     minHeight: ['max-content', 'auto'],
     position: 'relative',
-    h3: {
+    h1: {
       position: ['static', 'absolute'],
       top: '50%',
       left: '50%',
+      transform: ['none', 'translateX(-50%) translateY(-50%) rotate(-90deg)'],
       mt: 4,
       mb: 2,
-      transform: ['none', 'translateX(-50%) translateY(-50%) rotate(-90deg)'],
       letterSpacing: '12px',
       whiteSpace: 'nowrap',
     },
   },
+
   contactForm: {
     width: ['100%'],
     height: 'min-content',
     border: '2px solid',
     p: [8, 12],
     m: [4, 8],
+    fontSize: [2, 3],
+    lineHeight: '1.5',
     div: {
       flexDirection: 'column-reverse',
       'input, textarea': {
@@ -207,5 +224,10 @@ const styles = {
         },
       },
     },
+  },
+
+  successMsg: {
+    display: 'inline',
+    ml: 4,
   },
 };
