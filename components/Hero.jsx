@@ -29,7 +29,11 @@ export default function Hero() {
           <Link href='#work'>
             <Button variant='filled'>SEE MY WORK</Button>
           </Link>
-          <a href='#'>
+          <a
+            href='https://drive.google.com/file/d/1eeMuGuI11BYbqNkIbzZNaZXw7NqE0Eg5/view?usp=sharing'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <Button variant='outlined'> RESUME</Button>
           </a>
         </Box>
@@ -71,7 +75,7 @@ const styles = {
   highlight: {
     color: 'accent',
   },
-  
+
   heroImage: {
     width: ['100%', '50%'],
     height: ['40vh', 'auto'],

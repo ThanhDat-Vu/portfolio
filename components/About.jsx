@@ -22,7 +22,7 @@ export default function About() {
 
       <Flex sx={styles.right}>
         <Text>
-          Hello, my name is Vu Thanh Dat, or Daniel for short. I am experienced
+          Hello, my name is Vu Thanh Dat, or Daniel for short. I have experience
           in full-stack web development, especially in creating React
           applications.
         </Text>

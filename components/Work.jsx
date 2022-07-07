@@ -25,8 +25,20 @@ export default function Work() {
               Next.js.
             </Text>
             <Box>
-              <Button variant='filled'>SOURCE CODE</Button>
-              <Button variant='outlined'>DEMO</Button>
+              <a
+                href='https://github.com/ThanhDat-Vu/Project-E/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Button variant='filled'>SOURCE CODE</Button>
+              </a>
+              <a
+                href='https://project-e--thanhdat-vu.vercel.app/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Button variant='outlined'>DEMO</Button>
+              </a>
             </Box>
           </Flex>
         </Box>
@@ -47,7 +59,13 @@ export default function Work() {
                 Next.js.
               </Text>
               <Box>
-                <Button variant='filled'>SOURCE CODE</Button>
+                <a
+                  href='https://github.com/ThanhDat-Vu/portfolio/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <Button variant='filled'>SOURCE CODE</Button>
+                </a>
               </Box>
             </Flex>
           </Box>
@@ -64,7 +82,13 @@ export default function Work() {
               <Heading as='h3'>Mini-projects</Heading>
               <Text>These projects help me capture new concepts.</Text>
               <Box>
-                <Button variant='filled'>SOURCE CODE</Button>
+                <a
+                  href='https://github.com/ThanhDat-Vu/mini-projects'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <Button variant='filled'>SOURCE CODE</Button>
+                </a>
               </Box>
             </Flex>
           </Box>
@@ -83,13 +107,25 @@ export default function Work() {
           <Flex sx={styles.info}>
             <Heading as='h3'>Cozi - Letter Exchanging with Strangers</Heading>
             <Text>
-              A CRUD website built with MERN Stack The main purpose of this website is
-              to allow people to share their feelings, send them to the world,
-              and find someone who empathizes with those feelings.
+              A CRUD website built with MERN Stack The main purpose of this
+              website is to allow people to share their feelings, send them to
+              the world, and find someone who empathizes with those feelings.
             </Text>
             <Box>
-              <Button variant='filled'>SOURCE CODE</Button>
-              <Button variant='outlined'>DEMO</Button>
+              <a
+                href='https://github.com/ThanhDat-Vu/cozi-info/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Button variant='filled'>SOURCE CODE</Button>
+              </a>
+              <a
+                href='https://wda-01-cozi-client.vercel.app/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Button variant='outlined'>DEMO</Button>
+              </a>
             </Box>
           </Flex>
         </Box>
