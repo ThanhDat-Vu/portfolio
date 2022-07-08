@@ -21,7 +21,6 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    form.current.reset();
     emailjs
       .sendForm(
         'contact_service',
@@ -30,6 +29,7 @@ export default function Contact() {
         'Nne7fNrQTzS5lpcbX'
       )
       .then(() => {
+        form.current.reset();
         setShowSuccessMsg(true);
         setTimeout(() => {
           setShowSuccessMsg(false);
@@ -145,7 +145,7 @@ const styles = {
 
   image: {
     width: '100%',
-    height: ['28vh', '100%'],
+    height: ['32vh', '100%'],
     position: 'relative',
     img: {
       zIndex: -1,
@@ -159,9 +159,6 @@ const styles = {
     left: [4, 8],
     p: 8,
     bg: 'backdrop',
-    h2: {
-      fontSize: [5, 6],
-    },
   },
 
   info: {

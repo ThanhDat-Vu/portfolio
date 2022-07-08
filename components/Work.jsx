@@ -37,7 +37,7 @@ export default function Work() {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <Button variant='outlined'>DEMO</Button>
+                <Button variant='outlined' ml='4'>DEMO</Button>
               </a>
             </Box>
           </Flex>
@@ -124,7 +124,7 @@ export default function Work() {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <Button variant='outlined'>DEMO</Button>
+                <Button variant='outlined' ml='4'>DEMO</Button>
               </a>
             </Box>
           </Flex>
@@ -169,7 +169,7 @@ const styles = {
   },
 
   imageS: {
-    width: '60%',
+    width: ['56%', '60%'],
     height: '100%',
     position: 'relative',
     boxShadow: '2px 0px',
@@ -182,7 +182,7 @@ const styles = {
   },
 
   imageXS: {
-    width: '40%',
+    width: ['44%', '40%'],
     height: '100%',
     position: 'relative',
     img: {
@@ -219,7 +219,7 @@ const styles = {
     position: 'relative',
     width: '100%',
     height: '100%',
-    px: [8, 12],
+    px: [6, 12],
     bg: 'backdrop',
     color: 'primary',
     span: {
@@ -227,7 +227,6 @@ const styles = {
     },
     button: {
       color: 'primary',
-      mr: 4,
     },
   },
 

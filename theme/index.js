@@ -60,11 +60,9 @@ export const theme = {
       display: 'block',
       fontFamily: 'primary',
       fontSize: [3, 4],
-      lineHeight: '1.5',
     },
     heading: {
       fontFamily: 'primary',
-      lineHeight: ['1.2', '1.5'],
     },
   },
 
@@ -74,6 +72,7 @@ export const theme = {
       scrollPaddingTop: [12, 8],
       fontFamily: 'primary',
       fontSize: [2, 4],
+      lineHeight: '1.4',
     },
   },
 };
